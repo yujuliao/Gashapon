@@ -27,6 +27,7 @@
 <div id="a">
   <a class="result2" id="myAnchor2" href="http://www.microsoft.com" ></a>
   <a class="result" id="myAnchor" href="http://www.microsoft.com" ></a>
+  <a class="result2" id="myAnchor3" href="http://www.microsoft.com" ></a>
 </div>
   <input type="button" value="☆ Back ☆" id="button2" class="ba">
 <style>
@@ -83,7 +84,10 @@
           position: relative;
           top:180px;
         }
+
+
        
+
 </style>
 <div id="point">
 <center>
@@ -152,6 +156,7 @@ document.getElementById("myAnchor").href = "https://www.w3schools.com";
 
 <script>
 function blockf(v) {
+
     block = v;
     document.getElementById("demo").innerHTML = block ;
    
@@ -175,6 +180,7 @@ document.getElementById("myAnchor").innerHTML =" ";
     document.getElementById("myAnchor2").innerHTML ="no";
     document.getElementById("myAnchor").innerHTML ="no";
     document.getElementById("myAnchor").href ="http://wordpress-foodmap.7e14.starter-us-west-2.openshiftapps.com/map/";
+  //  freeset();
  //   alert("none!!!!!!!");
    
   }
@@ -230,6 +236,7 @@ document.getElementById("myAnchor").innerHTML =" ";
             else{
             block=choseblock[theblock];
               }
+
         }
         else{
           var i=block;
@@ -249,7 +256,7 @@ document.getElementById("myAnchor").innerHTML =" ";
               document.getElementById("myAnchor").innerHTML ="no";
               document.getElementById("myAnchor").href ="http://wordpress-foodmap.7e14.starter-us-west-2.openshiftapps.com/map/";
             //  freeset();
-          //     alert("none!!!!!!!");
+               alert("none!!!!!!!");
             //  break;
             }
           }
@@ -260,8 +267,8 @@ document.getElementById("myAnchor").innerHTML =" ";
                 nothing=1
                 document.getElementById("myAnchor").innerHTML ="no";
                   document.getElementById("myAnchor").href ="http://wordpress-foodmap.7e14.starter-us-west-2.openshiftapps.com/map/";
-                //  freeset();
-           //     alert("none!!!!!!!");
+              //    freeset();
+                alert("none!!!!!!!");
               //  break;
               } 
             } 
@@ -303,6 +310,7 @@ document.getElementById("myAnchor").innerHTML =" ";
         var t=block;
         block=t+1;
       }
+
 if(index2==1){
   final=1;
  document.getElementById("myAnchor").innerHTML ="熊賀炒飯";
@@ -433,6 +441,7 @@ else if(index2==27 || index2==28){
  document.getElementById("myAnchor").innerHTML ="想初。享廚";
  document.getElementById("myAnchor").href ="http://wordpress-foodmap.7e14.starter-us-west-2.openshiftapps.com/514-2/想初%E3%80%82享廚/";
 }
+
 else if(index2==36){
   final=1;
  document.getElementById("myAnchor").innerHTML ="豬食堂";
@@ -628,6 +637,7 @@ else if(index2>=101 && index2<=105){
  document.getElementById("myAnchor").innerHTML ="綵緹";
  document.getElementById("myAnchor").href ="http://wordpress-foodmap.7e14.starter-us-west-2.openshiftapps.com/%E5%AD%B8%E9%A4%90/%E8%BC%94%E5%9C%92/%E7%B6%B5%E7%B7%B9/";
 }
+
 else if(index2==106 || index2==123){
   final=1;
  document.getElementById("myAnchor").innerHTML ="廣東粥";
@@ -818,6 +828,7 @@ else if(index2==285){
  document.getElementById("myAnchor").innerHTML ="一品香自助餐";
  document.getElementById("myAnchor").href ="http://wordpress-foodmap.7e14.starter-us-west-2.openshiftapps.com/%e5%ad%b8%e9%a4%90/%e6%96%87%e5%9c%92/%e4%b8%80%e5%93%81%e9%a6%99%e8%87%aa%e5%8a%a9%e9%a4%90/";
 }
+
 else if(index2==311){
   final=1;
  document.getElementById("myAnchor").innerHTML ="咖啡知道";
@@ -1078,7 +1089,11 @@ else if(index2==402){
  document.getElementById("myAnchor").innerHTML ="滷都香";
  document.getElementById("myAnchor").href ="http://wordpress-foodmap.7e14.starter-us-west-2.openshiftapps.com/建國一路/滷都香/";
 }
+
+
+
   }//endwhile
+
 }
 if(block2==0 ||block2==10 ){
   final=1;
@@ -1134,15 +1149,16 @@ else if(block2==5){
 if(nothing==1){
   document.getElementById("myAnchor2").innerHTML ="no";
   document.getElementById("myAnchor").innerHTML ="ne";
-  freeset();
 }
-document.getElementById("myAnchor3").innerHTML =index2;
+//document.getElementById("myAnchor3").innerHTML =index2;
 freeset();
 tii2=tii;
 tii=tii2+1;
 //document.getElementById("myAnchor").innerHTML =tii;
 }
   
+
+
 function freeset(){
   nothing=0;
   block=0;
